@@ -1,42 +1,147 @@
+# Move captial of the new empire
 country_event = {
-    id = afu_move_capital
-	title = "afu_move_capital.t"
-    desc = "afu_move_capital.d"
+    id = afu_move_capital.1
+	title = "afu_move_capital.1.t"
     picture = AFU_MOVE_CAPITAL_eventPicture
-    fire_only_one = yes
+    fire_only_once = yes
+    desc = "afu_move_capital.1.d"
     trigger = {
         tag = AFU
-        capital = 236 # London
         has_country_flag = formed_anglo_french_union_flag
+        NOT = { 
+            OR = {
+                capital = 236 # London
+                capital = 183 # Paris
+            }
+        }
     }
     mean_time_to_happen = {
-        months = 1
+        months = 6
     }
     option = {
-        name = "afu_move_capital.1"
+        name = "afu_move_capital.1.a"
+        236 = { # London
+            move_capital_effect = yes
+        }
+        183 = { # Paris
+            set_seat_in_parliament = yes
+            add_unrest = 1
+        }
+        hidden_effect = {
+			set_country_flag = afu_capital_moved_flag
+        }
+        ai_chance = {
+            factor = 50
+            modifier = {
+                factor = 75
+                primary_culture = english
+            }
+            modifier = {
+                factor = 25
+                primary_culture = cosmopolitan_french
+            }
+        }
+    }
+    option = {
+        name = "afu_move_capital.1.b"
+        236 = { # London
+            set_seat_in_parliament = yes
+            add_unrest = 1
+        }
         183 = { # Paris
             move_capital_effect = yes
-            add_base_tax = 2
-            add_base_production = 2
-            add_base_manpower = 2
-            set_seat_in_parliament = yes
         }
-        178 = { # Anjou
-            set_seat_in_parliament = yes
+        hidden_effect = {
+            set_country_flag = afu_capital_moved_flag
+        }
+        ai_chance = {
+            factor = 35
+            modifier = {
+                factor = 25
+                primary_culture = english
+            }
+            modifier = {
+                factor = 75
+                primary_culture = cosmopolitan_french
+            }
         }
     }
     option = {
-        name = "afu_move_capital.2"
+        name = "afu_move_capital.1.c"
         236 = { # London
-            add_base_tax = 1
-            add_base_production = 1
+            set_seat_in_parliament = yes
+            add_unrest = 2
         }
         183 = { # Paris
+            set_seat_in_parliament = yes
             add_unrest = 2
-            set_seat_in_parliament = yes
         }
-        178 = { # Anjou
-            set_seat_in_parliament = yes
+        hidden_effect = {
+            set_country_flag = afu_capital_moved_flag
+        }
+        ai_chance = {
+            factor = 15
+            modifier = {
+                factor = 0
+                primary_culture = english
+            }
+            modifier = {
+                factor = 0
+                primary_culture = cosmopolitan_french
+            }
+        }
+    }
+}
+
+# Choose between trade or production for new capital
+country_event = {
+    id = afu_move_capital.2
+    title = "afu_move_capital.2.t"
+    desc = "afu_move_capital.2.d"
+    fire_only_once = yes
+    trigger = {
+        has_country_flag = afu_capital_moved_flag
+        OR = {
+            capital = 236 # London
+            capital = 183 # Paris
+        }
+    }
+    option = {
+        name = "afu_move_capital.2.a"
+        if = {
+            limit = {
+                capital = 236 # London
+            }
+            245 = {
+				add_base_production = 2
+            }
+        }
+        if = {
+            limit = {
+                capital = 183 # Paris
+            }
+            183 = {
+				add_base_production = 2
+            }
+        }
+    }
+    option = {
+        name = "afu_move_capital.2.b"
+        if = {
+            limit = {
+                capital = 236 # London
+            }
+            245 = {
+				add_base_tax = 2
+            }
+        }
+        if = {
+            limit = {
+                capital = 183 # Paris
+            }
+            183 = {
+				add_base_tax = 2
+            }
         }
     }
 }

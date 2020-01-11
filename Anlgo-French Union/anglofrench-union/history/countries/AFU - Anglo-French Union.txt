@@ -1,17 +1,21 @@
 government = monarchy
 add_government_reform = english_monarchy
 technology_group = western
+
 primary_culture = english
 add_accepted_culture = scottish
 add_accepted_culture = welsh
-add_accepted_culture = american
-add_accepted_culture = aquitanian
-add_accepted_culture = breton
-add_accepted_culture = burgundian
-add_accepted_culture = francien
+add_accepted_culture = cosmopolitan_french
 add_accepted_culture = gascon
-add_accepted_culture = norman
-add_accepted_culture = occitan
-add_accepted_culture = waloon
-religion = protestant
-capital = 183	# Paris
+add_accepted_culture = normand
+add_accepted_culture = aquitaine
+add_accepted_culture = burgundian
+add_accepted_culture = occitain
+add_accepted_culture = wallonian
+add_accepted_culture = breton
+
+religion = catholic
+capital = 236	# London
+
+national_focus = MIL
+historical_rival = HAB
