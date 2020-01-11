@@ -21,7 +21,7 @@ Anyone is more than welcome to suggest any ideas and if they really want put mor
     - To include missions meddling in European affairs i.e the Holy Roman Empire
 
 ## Compatability
--Not Ironman compatible
--Not compatible with any custom nation using 'AFU' tag
+- Not Ironman compatible
+- Not compatible with any custom nation using 'AFU' tag
 - Should be compatable with any mod that doesn't modify tech (required to form country)
     - With any popular requests can work to create a compatible version with the mod(s) in question
