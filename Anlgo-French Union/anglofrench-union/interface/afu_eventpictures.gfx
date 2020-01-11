@@ -1,0 +1,7 @@
+spriteTypes = {
+	spriteType = {
+		name = "AFU_MOVE_CAPITAL_eventPicture"
+		texturefile = "gfx/event_pictures/AFU_MOVE_CAPITAL_eventPicture.dds"
+		allwaystransparent = yes
+	}
+}

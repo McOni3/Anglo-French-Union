@@ -1,0 +1,45 @@
+AFU_ideas = {
+	start = {
+		naval_morale = 0.25
+        army_morale = 0.25
+		diplomatic_reputation = 2
+	}
+
+	bonus = {
+		global_tariffs = 0.25
+	}
+	
+	trigger = {
+		tag = AFU
+	}
+	free = yes		#will be added at load.
+
+	afu_union = {
+		global_unrest = -2
+		max_states = 20
+	}
+	afu_naval = {
+		leader_naval_fire = 5
+        navy_tradition = 1
+	}
+	afu_army = {
+		drill_gain_modifier = 0.2
+        discipline = 0.2
+	}
+	afu_colonial = {
+		range = 0.75
+        treasure_fleet_income = 0.2
+	}
+	afu_europe = {
+		diplomatic_reputation = 1
+        unjustified_demands = -0.4
+	}
+	afu_tech = {
+		technology_cost = -0.15
+        global_institution_spread = 0.1
+	}
+	afu_trade = {
+		global_trade_power = 0.15
+		merchants = 1
+	}
+}

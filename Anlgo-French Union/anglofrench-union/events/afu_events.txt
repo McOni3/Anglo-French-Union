@@ -1,0 +1,42 @@
+country_event = {
+    id = afu_move_capital
+	title = "afu_move_capital.t"
+    desc = "afu_move_capital.d"
+    picture = AFU_MOVE_CAPITAL_eventPicture
+    fire_only_one = yes
+    trigger = {
+        tag = AFU
+        capital = 236 # London
+        has_country_flag = formed_anglo_french_union_flag
+    }
+    mean_time_to_happen = {
+        months = 1
+    }
+    option = {
+        name = "afu_move_capital.1"
+        183 = { # Paris
+            move_capital_effect = yes
+            add_base_tax = 2
+            add_base_production = 2
+            add_base_manpower = 2
+            set_seat_in_parliament = yes
+        }
+        178 = { # Anjou
+            set_seat_in_parliament = yes
+        }
+    }
+    option = {
+        name = "afu_move_capital.2"
+        236 = { # London
+            add_base_tax = 1
+            add_base_production = 1
+        }
+        183 = { # Paris
+            add_unrest = 2
+            set_seat_in_parliament = yes
+        }
+        178 = { # Anjou
+            set_seat_in_parliament = yes
+        }
+    }
+}
