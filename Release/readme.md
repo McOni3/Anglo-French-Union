@@ -1,12 +1,17 @@
 # Releases
 
-#### v1.0
+## Release versioning
+*v__\*__.00* for major realeases
+*v0__.\*__0* for game version changes i.e. EU4 1.28 vs 1.29
+*v0.0__\*__* for minor changes and bux fixes
+
+#### v1.00
 First rendition of the mod, compatible with EU4 version 1.28.*. Currently a bit overpowered and unbalanced.
 
-#### v1.01
+#### v1.10
 Updated version of v1.0 that is compatible with EU4 version 1.29.*.
 
-#### v1.1
+#### v2.00
 - Recreated the mod from scratch.
 - Removed any known bugs.
 - Updated country color to a purple(ish) one to represent *Red* of England/Great Britian and *Blue* of France
