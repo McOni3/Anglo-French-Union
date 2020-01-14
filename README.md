@@ -1,7 +1,8 @@
 # Anglo-French Union
-A mod for Europa Universalis 4 called Anglo-French Union which started as a work around to a personal play through which I though would be welcome to others with the lack of simiar mods to choose from.
+A mod for Europa Universalis 4 called Anglo-French Union which started as a work around to a personal play through which I thought would be a welcome addition to others with the lack of simiar mods to choose from.
+
 It is currently a heavy work in progress and with only the basic building blocks in place, although I do intend to flesh it out and add as much content to it as I can to make it feel more like a nation that could be real and part of the game and less like a temporary solution.
-Anyone is more than welcome to suggest any ideas and if they really want put more direct input to the mod.
+Anyone is more than welcome to suggest any ideas and if they really want, put more direct input to the mod.
 
 ## Current Features
 - Custom Ideas (Work in Progress)
