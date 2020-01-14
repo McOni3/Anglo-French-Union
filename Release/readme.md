@@ -1,9 +1,9 @@
 # Releases
 
 ## Release versioning
-*v__\*__.00* for major realeases
-*v0__.\*__0* for game version changes i.e. EU4 1.28 vs 1.29
-*v0.0__\*__* for minor changes and bux fixes
+_v**\***.00_ for major realeases
+_v0.**\***0_ for game version changes i.e. EU4 1.28 vs 1.29
+_v0.0**\***_ for minor changes and bux fixes
 
 #### v1.00
 First rendition of the mod, compatible with EU4 version 1.28.*. Currently a bit overpowered and unbalanced.
