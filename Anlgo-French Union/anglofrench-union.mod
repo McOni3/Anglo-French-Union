@@ -7,4 +7,4 @@ tags={
 	"Missions And Decisions"
 }
 picture="anlgofrench_union.jpg"
-supported_version="1.29.*.*"
+supported_version="1.31.*.*"
